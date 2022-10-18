@@ -12,7 +12,7 @@ int cnt = 1;
 int numreader = 0; // To keep count of the total readers
 
 void *writer(void *wno) {
-  sem_wait(&wrt); // when a wariter starts writing(readcount=0) then the first reader get blocked on wait(wrt) and this blocks all the readers.
+  sem_wait(&wrt); // when a writer starts writing(readcount=0) then the first reader get blocked on wait(wrt) and this blocks all the readers.
   // write operation here
   cnt = cnt * 2;
 

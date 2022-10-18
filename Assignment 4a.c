@@ -160,7 +160,7 @@ int main() {
     exit(EXIT_FAILURE);
   }
 
-  // Setting inddices to 0
+  // Setting indices to 0
   pidx = 0;
   cidx = 0;
 
