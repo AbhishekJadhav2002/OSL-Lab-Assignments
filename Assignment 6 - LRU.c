@@ -1,3 +1,7 @@
+/*
+Problem Statement - Implement the C program for Page Replacement Algorithms: FCFS, LRU, and Optimal for frame size as minimum three.
+*/
+
 #include <stdio.h>
 #define FRAME_SIZE 5 //>3 as per the assignment problem statement
 

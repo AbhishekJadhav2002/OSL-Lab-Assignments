@@ -1,3 +1,7 @@
+/*
+Problem Statement - Implement C program for Deadlock Avoidance: Banker’sAlgorithm
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 #define NO_OF_RESOURCE_INSTANCES 3
@@ -5,16 +9,16 @@ using namespace std;
 
 struct process
 {
-    int rank = 0, allocation[NO_OF_RESOURCE_INSTANCES], max_need[NO_OF_RESOURCE_INSTANCES], need[NO_OF_RESOURCE_INSTANCES] = {0};
+    int rank = 0, allocation[NO_OF_RESOURCE_INSTANCES], max_need[NO_OF_RESOURCE_INSTANCES], need[NO_OF_RESOURCE_INSTANCES] = { 0 };
 };
 
-int available[NO_OF_RESOURCE_INSTANCES] = {2, 1, 0};
+int available[NO_OF_RESOURCE_INSTANCES] = { 2, 1, 0 };
 process given[NO_OF_PROCESSES] = {
     {0, {1, 1, 2}, {4, 3, 3}, {0}},
     {0, {2, 1, 2}, {3, 2, 2}, {0}},
     {0, {4, 0, 1}, {9, 0, 2}, {0}},
     {0, {0, 2, 0}, {7, 5, 3}, {0}},
-    {0, {1, 1, 2}, {1, 1, 2}, {0}}};
+    {0, {1, 1, 2}, {1, 1, 2}, {0}} };
 
 void display_resource_instances(int instances[], int no_of_instances)
 {

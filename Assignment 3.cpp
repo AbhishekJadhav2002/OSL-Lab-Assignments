@@ -1,8 +1,5 @@
-/**
- * @name OSL - Assignment 3
- * @author Abhishek Jadhav
- * @class TE-10
- * @note Roll No. - 33232
+/*
+Problem Statement - Implement C program for CPU scheduling algorithms: ShortestJobFirst(SJF) and Round Robin with different arrival time.
 */
 
 #include <bits/stdc++.h>
